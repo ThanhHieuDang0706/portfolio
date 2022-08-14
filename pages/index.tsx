@@ -33,6 +33,7 @@ const Home: React.FC<HomeProps> = ({ page, error }) => {
           <Head>
             <title>{page.meta.title}</title>
             <meta name="description" content={page.meta.description} />
+            <link rel="icon" type="image/x-icon" href="http://oflisback.github.io/react-favicon/img/github.ico" />
           </Head>
           <PageViewer page={pageOk} />
         </>
