@@ -5,13 +5,13 @@
   "version": "1.3.6",
   "author": "",
   "homepage": "https://ThanhHieuDang0706.github.io/portfolio",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "yarn run build && next export  && mv out _static"
+    "export": "yarn run build && next export  && mv out _static",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "engines": {
     "node": "14.x"
